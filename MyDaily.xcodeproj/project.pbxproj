@@ -13,10 +13,14 @@
 		A9BDD6DC1D8A640A0044DA0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9BDD6DA1D8A640A0044DA0F /* LaunchScreen.storyboard */; };
 		A9BDD6E51D8A65970044DA0F /* MDMainNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BDD6E41D8A65970044DA0F /* MDMainNavigationViewController.m */; };
 		A9BDD6E81D8A66DF0044DA0F /* APPDelegate+Controllers.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BDD6E71D8A66DF0044DA0F /* APPDelegate+Controllers.m */; };
-		A9BDD6ED1D8A70320044DA0F /* tabbar_calander@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9BDD6EB1D8A70320044DA0F /* tabbar_calander@3x.png */; };
-		A9BDD6EE1D8A70320044DA0F /* tabbar_calander@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9BDD6EC1D8A70320044DA0F /* tabbar_calander@2x.png */; };
 		A9BDD6F81D8A723F0044DA0F /* tabbar_statistics@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9BDD6F61D8A723F0044DA0F /* tabbar_statistics@3x.png */; };
 		A9BDD6F91D8A723F0044DA0F /* tabbar_statistics@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9BDD6F71D8A723F0044DA0F /* tabbar_statistics@2x.png */; };
+		A9BDD7011D8BCE020044DA0F /* tabbar_found@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9BDD6FF1D8BCE020044DA0F /* tabbar_found@3x.png */; };
+		A9BDD7021D8BCE020044DA0F /* tabbar_found@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9BDD7001D8BCE020044DA0F /* tabbar_found@2x.png */; };
+		A9BDD7051D8BD3BB0044DA0F /* tabbar_my@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9BDD7031D8BD3BB0044DA0F /* tabbar_my@3x.png */; };
+		A9BDD7061D8BD3BB0044DA0F /* tabbar_my@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9BDD7041D8BD3BB0044DA0F /* tabbar_my@2x.png */; };
+		A9BDD7091D8BD4E40044DA0F /* tabbar_calendar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9BDD7071D8BD4E40044DA0F /* tabbar_calendar@3x.png */; };
+		A9BDD70A1D8BD4E40044DA0F /* tabbar_calendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9BDD7081D8BD4E40044DA0F /* tabbar_calendar@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +35,15 @@
 		A9BDD6E41D8A65970044DA0F /* MDMainNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDMainNavigationViewController.m; sourceTree = "<group>"; };
 		A9BDD6E61D8A66DF0044DA0F /* APPDelegate+Controllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "APPDelegate+Controllers.h"; sourceTree = "<group>"; };
 		A9BDD6E71D8A66DF0044DA0F /* APPDelegate+Controllers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "APPDelegate+Controllers.m"; sourceTree = "<group>"; };
-		A9BDD6EB1D8A70320044DA0F /* tabbar_calander@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_calander@3x.png"; sourceTree = "<group>"; };
-		A9BDD6EC1D8A70320044DA0F /* tabbar_calander@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_calander@2x.png"; sourceTree = "<group>"; };
 		A9BDD6F51D8A70940044DA0F /* UIDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDefine.h; sourceTree = "<group>"; };
 		A9BDD6F61D8A723F0044DA0F /* tabbar_statistics@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_statistics@3x.png"; sourceTree = "<group>"; };
 		A9BDD6F71D8A723F0044DA0F /* tabbar_statistics@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_statistics@2x.png"; sourceTree = "<group>"; };
+		A9BDD6FF1D8BCE020044DA0F /* tabbar_found@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_found@3x.png"; sourceTree = "<group>"; };
+		A9BDD7001D8BCE020044DA0F /* tabbar_found@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_found@2x.png"; sourceTree = "<group>"; };
+		A9BDD7031D8BD3BB0044DA0F /* tabbar_my@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_my@3x.png"; sourceTree = "<group>"; };
+		A9BDD7041D8BD3BB0044DA0F /* tabbar_my@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_my@2x.png"; sourceTree = "<group>"; };
+		A9BDD7071D8BD4E40044DA0F /* tabbar_calendar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_calendar@3x.png"; sourceTree = "<group>"; };
+		A9BDD7081D8BD4E40044DA0F /* tabbar_calendar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_calendar@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +111,14 @@
 		A9BDD6EA1D8A70240044DA0F /* images */ = {
 			isa = PBXGroup;
 			children = (
-				A9BDD6EB1D8A70320044DA0F /* tabbar_calander@3x.png */,
-				A9BDD6EC1D8A70320044DA0F /* tabbar_calander@2x.png */,
+				A9BDD7071D8BD4E40044DA0F /* tabbar_calendar@3x.png */,
+				A9BDD7081D8BD4E40044DA0F /* tabbar_calendar@2x.png */,
 				A9BDD6F61D8A723F0044DA0F /* tabbar_statistics@3x.png */,
 				A9BDD6F71D8A723F0044DA0F /* tabbar_statistics@2x.png */,
+				A9BDD6FF1D8BCE020044DA0F /* tabbar_found@3x.png */,
+				A9BDD7001D8BCE020044DA0F /* tabbar_found@2x.png */,
+				A9BDD7031D8BD3BB0044DA0F /* tabbar_my@3x.png */,
+				A9BDD7041D8BD3BB0044DA0F /* tabbar_my@2x.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -169,11 +181,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9BDD6F81D8A723F0044DA0F /* tabbar_statistics@3x.png in Resources */,
-				A9BDD6EE1D8A70320044DA0F /* tabbar_calander@2x.png in Resources */,
+				A9BDD7091D8BD4E40044DA0F /* tabbar_calendar@3x.png in Resources */,
+				A9BDD7011D8BCE020044DA0F /* tabbar_found@3x.png in Resources */,
+				A9BDD7061D8BD3BB0044DA0F /* tabbar_my@2x.png in Resources */,
+				A9BDD7051D8BD3BB0044DA0F /* tabbar_my@3x.png in Resources */,
 				A9BDD6DC1D8A640A0044DA0F /* LaunchScreen.storyboard in Resources */,
 				A9BDD6D91D8A640A0044DA0F /* Assets.xcassets in Resources */,
-				A9BDD6ED1D8A70320044DA0F /* tabbar_calander@3x.png in Resources */,
 				A9BDD6F91D8A723F0044DA0F /* tabbar_statistics@2x.png in Resources */,
+				A9BDD70A1D8BD4E40044DA0F /* tabbar_calendar@2x.png in Resources */,
+				A9BDD7021D8BCE020044DA0F /* tabbar_found@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +344,7 @@
 				A9BDD6E21D8A640A0044DA0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

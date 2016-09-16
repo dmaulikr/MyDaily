@@ -22,7 +22,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self initTabBarController];
     
-    self.window.rootViewController = [[MDMainNavigationViewController alloc] initWithRootViewController:_tabBarController];
+    MDMainNavigationViewController * mainNaviVC = [[MDMainNavigationViewController alloc] initWithRootViewController:_tabBarController];
+    [mainNaviVC setNavigationBarHidden:YES];
+    self.window.rootViewController = mainNaviVC;
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -52,15 +54,23 @@
 - (void )initTabBarController {
     _tabBarController = [[UITabBarController alloc] init];
 //    _tabBarController.delegate = self;
-    UITabBarItem * diaryItem = [[UITabBarItem alloc] initWithTitle:@"日历" image:UI_IMAGE(@"tabbar_calander") selectedImage:UI_IMAGE(@"tabbar_calander") ];
-    UIViewController * firstVC = [[UIViewController alloc] init];
-    firstVC.tabBarItem = diaryItem;
+    UITabBarItem * diaryItem = [[UITabBarItem alloc] initWithTitle:@"日记" image:UI_IMAGE(@"tabbar_calendar") selectedImage:UI_IMAGE(@"tabbar_calendar") ];
+    UIViewController * diaryVC = [[UIViewController alloc] init];
+    diaryVC.tabBarItem = diaryItem;
     
     UITabBarItem * statisticItem = [[UITabBarItem alloc] initWithTitle:@"统计" image:UI_IMAGE(@"tabbar_statistics") selectedImage:UI_IMAGE(@"tabbar_statistics") ];
-    UIViewController * secondVC = [[UIViewController alloc] init];
-    secondVC.tabBarItem = statisticItem;
+    UIViewController * statisticVC = [[UIViewController alloc] init];
+    statisticVC.tabBarItem = statisticItem;
     
-    _tabBarController.viewControllers = @[firstVC,secondVC];
+    UITabBarItem * foundItem = [[UITabBarItem alloc] initWithTitle:@"发现" image:UI_IMAGE(@"tabbar_found") selectedImage:UI_IMAGE(@"tabbar_found") ];
+    UIViewController * foundVC = [[UIViewController alloc] init];
+    foundVC.tabBarItem = foundItem;
+    
+    UITabBarItem * myItem = [[UITabBarItem alloc] initWithTitle:@"我的" image:UI_IMAGE(@"tabbar_my") selectedImage:UI_IMAGE(@"tabbar_my") ];
+    UIViewController * myVC = [[UIViewController alloc] init];
+    myVC.tabBarItem = myItem;
+    
+    _tabBarController.viewControllers = @[diaryVC,foundVC,statisticVC,myVC];
 }
 
 @end
