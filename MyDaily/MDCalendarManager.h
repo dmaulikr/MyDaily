@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MDDailyEmotionInterface.h"
 
 @interface MDCalendarManager : NSObject
+
++ (instancetype)sharedInstance;
+- (NSMutableDictionary<NSDate *,NSObject<MDDailyEmotionProtocol> *> *)fakeEmotions;
 
 @end

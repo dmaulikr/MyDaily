@@ -7,7 +7,14 @@
 //
 
 #import <Realm/Realm.h>
+#import "MDDailyEmotionInterface.h"
 
-@interface MDDailyEmotionModel : RLMObject
+@interface MDDailyEmotionModel : NSObject<MDDailyEmotionProtocol>
+
+@property (nonatomic,strong,readonly) NSNumber *dailyEmotion;
+@property (nonatomic,strong,readonly) NSString *diaryText;
+@property (nonatomic,strong,readonly) NSDate *date;
+
++ (instancetype)fakeEmotionModelForDate:(NSDate *)date;
 
 @end

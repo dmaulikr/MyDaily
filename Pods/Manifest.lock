@@ -1,0 +1,23 @@
+PODS:
+  - JTCalendar (2.1.5)
+  - Masonry (1.0.0)
+  - Realm (0.99.1):
+    - Realm/Headers (= 0.99.1)
+  - Realm/Headers (0.99.1)
+  - XYPieChart (0.2)
+
+DEPENDENCIES:
+  - JTCalendar (~> 2.1.5)
+  - Masonry (~> 1.0.0)
+  - Realm
+  - XYPieChart (~> 0.2)
+
+SPEC CHECKSUMS:
+  JTCalendar: 57a4420f12d10c93c3b28da96803e7043d1c9281
+  Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
+  Realm: 522a0cc8e1f8755ee56d7dc16ca0fc380d045766
+  XYPieChart: 0efd8069d26c25d20ab74c01b5ad455f1fc48153
+
+PODFILE CHECKSUM: bee6a5f1c5cc13a32443e606a1e01620064a3ddd
+
+COCOAPODS: 1.0.1

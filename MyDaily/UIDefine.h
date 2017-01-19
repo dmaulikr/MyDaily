@@ -11,6 +11,7 @@
 
 #import <UIKit/UIKit.h>
 
+#define kNaviHeight 64
 #define UI_IMAGE(filename) [UIImage imageNamed:filename]
 
 

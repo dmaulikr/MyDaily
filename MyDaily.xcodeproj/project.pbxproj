@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D3B23020ABF92D15A4AF445 /* libPods-MyDaily.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6CB373571A47006CA0A7B1 /* libPods-MyDaily.a */; };
+		A92B0D231E2E079200BABABC /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92B0D221E2E079200BABABC /* LocalAuthentication.framework */; };
+		A92B0D261E2E0B2F00BABABC /* MDTouchIDAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A92B0D251E2E0B2F00BABABC /* MDTouchIDAuthViewController.m */; };
+		A92B0D371E2F444800BABABC /* MDCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A92B0D361E2F444800BABABC /* MDCalendarViewController.m */; };
+		A9A5AABC1E30692E0005E9F5 /* MDDailyEmotionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A5AABB1E30692E0005E9F5 /* MDDailyEmotionModel.m */; };
+		A9A5AAC61E3094700005E9F5 /* MDCalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A5AAC51E3094700005E9F5 /* MDCalendarManager.m */; };
 		A9BDD6CB1D8A640A0044DA0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BDD6CA1D8A640A0044DA0F /* main.m */; };
 		A9BDD6CE1D8A640A0044DA0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BDD6CD1D8A640A0044DA0F /* AppDelegate.m */; };
 		A9BDD6D91D8A640A0044DA0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9BDD6D81D8A640A0044DA0F /* Assets.xcassets */; };
@@ -24,6 +30,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A92B0D221E2E079200BABABC /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		A92B0D241E2E0B2F00BABABC /* MDTouchIDAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDTouchIDAuthViewController.h; sourceTree = "<group>"; };
+		A92B0D251E2E0B2F00BABABC /* MDTouchIDAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDTouchIDAuthViewController.m; sourceTree = "<group>"; };
+		A92B0D351E2F444800BABABC /* MDCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCalendarViewController.h; sourceTree = "<group>"; };
+		A92B0D361E2F444800BABABC /* MDCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCalendarViewController.m; sourceTree = "<group>"; };
+		A92B0D3B1E2F6D4C00BABABC /* MDDailyEmotionInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDailyEmotionInterface.h; sourceTree = "<group>"; };
+		A9A5AABA1E30692E0005E9F5 /* MDDailyEmotionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDailyEmotionModel.h; sourceTree = "<group>"; };
+		A9A5AABB1E30692E0005E9F5 /* MDDailyEmotionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDailyEmotionModel.m; sourceTree = "<group>"; };
+		A9A5AAC41E3094700005E9F5 /* MDCalendarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCalendarManager.h; sourceTree = "<group>"; };
+		A9A5AAC51E3094700005E9F5 /* MDCalendarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCalendarManager.m; sourceTree = "<group>"; };
 		A9BDD6C61D8A640A0044DA0F /* MyDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BDD6CA1D8A640A0044DA0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A9BDD6CC1D8A640A0044DA0F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -44,6 +60,9 @@
 		A9BDD7041D8BD3BB0044DA0F /* tabbar_my@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_my@2x.png"; sourceTree = "<group>"; };
 		A9BDD7071D8BD4E40044DA0F /* tabbar_calendar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_calendar@3x.png"; sourceTree = "<group>"; };
 		A9BDD7081D8BD4E40044DA0F /* tabbar_calendar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_calendar@2x.png"; sourceTree = "<group>"; };
+		AC6CB373571A47006CA0A7B1 /* libPods-MyDaily.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyDaily.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACD083CD96D950CC653F9F47 /* Pods-MyDaily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDaily.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyDaily/Pods-MyDaily.release.xcconfig"; sourceTree = "<group>"; };
+		D27B27C3C00408315A7B128E /* Pods-MyDaily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDaily.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyDaily/Pods-MyDaily.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,18 +70,104 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92B0D231E2E079200BABABC /* LocalAuthentication.framework in Frameworks */,
+				4D3B23020ABF92D15A4AF445 /* libPods-MyDaily.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F6DEE61B697924449DED81B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D27B27C3C00408315A7B128E /* Pods-MyDaily.debug.xcconfig */,
+				ACD083CD96D950CC653F9F47 /* Pods-MyDaily.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A92B0D211E2E079200BABABC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A92B0D221E2E079200BABABC /* LocalAuthentication.framework */,
+				AC6CB373571A47006CA0A7B1 /* libPods-MyDaily.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A92B0D331E2F20FC00BABABC /* TouchIDAuth */ = {
+			isa = PBXGroup;
+			children = (
+				A92B0D241E2E0B2F00BABABC /* MDTouchIDAuthViewController.h */,
+				A92B0D251E2E0B2F00BABABC /* MDTouchIDAuthViewController.m */,
+			);
+			name = TouchIDAuth;
+			sourceTree = "<group>";
+		};
+		A92B0D341E2F211100BABABC /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				A9A5AAC31E3094480005E9F5 /* Manager */,
+				A9A5AAC21E30943E0005E9F5 /* UI */,
+			);
+			name = Calendar;
+			sourceTree = "<group>";
+		};
+		A92B0D391E2F5D9900BABABC /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				A92B0D3A1E2F6D1C00BABABC /* DailyEmotion */,
+				A92B0D341E2F211100BABABC /* Calendar */,
+				A92B0D331E2F20FC00BABABC /* TouchIDAuth */,
+			);
+			name = Function;
+			sourceTree = "<group>";
+		};
+		A92B0D3A1E2F6D1C00BABABC /* DailyEmotion */ = {
+			isa = PBXGroup;
+			children = (
+				A92B0D3C1E2F6F7C00BABABC /* Model */,
+				A92B0D3B1E2F6D4C00BABABC /* MDDailyEmotionInterface.h */,
+			);
+			name = DailyEmotion;
+			sourceTree = "<group>";
+		};
+		A92B0D3C1E2F6F7C00BABABC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A9A5AABA1E30692E0005E9F5 /* MDDailyEmotionModel.h */,
+				A9A5AABB1E30692E0005E9F5 /* MDDailyEmotionModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A9A5AAC21E30943E0005E9F5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A92B0D351E2F444800BABABC /* MDCalendarViewController.h */,
+				A92B0D361E2F444800BABABC /* MDCalendarViewController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		A9A5AAC31E3094480005E9F5 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A9A5AAC41E3094700005E9F5 /* MDCalendarManager.h */,
+				A9A5AAC51E3094700005E9F5 /* MDCalendarManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
 		A9BDD6BD1D8A640A0044DA0F = {
 			isa = PBXGroup;
 			children = (
 				A9BDD6E91D8A70190044DA0F /* resources */,
 				A9BDD6C81D8A640A0044DA0F /* MyDaily */,
 				A9BDD6C71D8A640A0044DA0F /* Products */,
+				A92B0D211E2E079200BABABC /* Frameworks */,
+				7F6DEE61B697924449DED81B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +182,7 @@
 		A9BDD6C81D8A640A0044DA0F /* MyDaily */ = {
 			isa = PBXGroup;
 			children = (
+				A92B0D391E2F5D9900BABABC /* Function */,
 				A9BDD6CC1D8A640A0044DA0F /* AppDelegate.h */,
 				A9BDD6CD1D8A640A0044DA0F /* AppDelegate.m */,
 				A9BDD6F51D8A70940044DA0F /* UIDefine.h */,
@@ -130,9 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9BDD6E01D8A640A0044DA0F /* Build configuration list for PBXNativeTarget "MyDaily" */;
 			buildPhases = (
+				E6BCB6F1A03737E3C4EDED6F /* [CP] Check Pods Manifest.lock */,
 				A9BDD6C21D8A640A0044DA0F /* Sources */,
 				A9BDD6C31D8A640A0044DA0F /* Frameworks */,
 				A9BDD6C41D8A640A0044DA0F /* Resources */,
+				05E63D894621ACD25917D246 /* [CP] Embed Pods Frameworks */,
+				B3A68134AAEBA975CDB54C85 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -154,6 +263,7 @@
 				TargetAttributes = {
 					A9BDD6C51D8A640A0044DA0F = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = E5S98A88N2;
 					};
 				};
 			};
@@ -195,15 +305,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05E63D894621ACD25917D246 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyDaily/Pods-MyDaily-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3A68134AAEBA975CDB54C85 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyDaily/Pods-MyDaily-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6BCB6F1A03737E3C4EDED6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A9BDD6C21D8A640A0044DA0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92B0D261E2E0B2F00BABABC /* MDTouchIDAuthViewController.m in Sources */,
 				A9BDD6E51D8A65970044DA0F /* MDMainNavigationViewController.m in Sources */,
+				A9A5AABC1E30692E0005E9F5 /* MDDailyEmotionModel.m in Sources */,
 				A9BDD6CE1D8A640A0044DA0F /* AppDelegate.m in Sources */,
+				A9A5AAC61E3094700005E9F5 /* MDCalendarManager.m in Sources */,
 				A9BDD6E81D8A66DF0044DA0F /* APPDelegate+Controllers.m in Sources */,
 				A9BDD6CB1D8A640A0044DA0F /* main.m in Sources */,
+				A92B0D371E2F444800BABABC /* MDCalendarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,8 +467,12 @@
 		};
 		A9BDD6E11D8A640A0044DA0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D27B27C3C00408315A7B128E /* Pods-MyDaily.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E5S98A88N2;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = MyDaily/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = personal.MyDaily;
@@ -316,8 +482,12 @@
 		};
 		A9BDD6E21D8A640A0044DA0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACD083CD96D950CC653F9F47 /* Pods-MyDaily.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E5S98A88N2;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = MyDaily/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = personal.MyDaily;
