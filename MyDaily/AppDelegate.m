@@ -11,6 +11,7 @@
 #import "UIDefine.h"
 #import "MDTouchIDAuthViewController.h"
 #import "MDCalendarViewController.h"
+#import "MDStatisticsViewController.h"
 
 @interface AppDelegate ()<UITabBarDelegate>
 
@@ -28,10 +29,10 @@
     self.window.rootViewController = mainNaviVC;
     [self.window makeKeyAndVisible];
 
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        MDTouchIDAuthViewController *authVC = [[MDTouchIDAuthViewController alloc] init];
-        [mainNaviVC presentViewController:authVC animated:YES completion:nil];
-    });
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        MDTouchIDAuthViewController *authVC = [[MDTouchIDAuthViewController alloc] init];
+//        [mainNaviVC presentViewController:authVC animated:YES completion:nil];
+//    });
 
     
     return YES;
@@ -68,7 +69,7 @@
     calendarVC.tabBarItem = diaryItem;
     
     UITabBarItem * statisticItem = [[UITabBarItem alloc] initWithTitle:@"统计" image:UI_IMAGE(@"tabbar_statistics") selectedImage:UI_IMAGE(@"tabbar_statistics") ];
-    UIViewController * statisticVC = [[UIViewController alloc] init];
+    MDStatisticsViewController * statisticVC = [[MDStatisticsViewController alloc] init];
     statisticVC.tabBarItem = statisticItem;
     
     UITabBarItem * foundItem = [[UITabBarItem alloc] initWithTitle:@"发现" image:UI_IMAGE(@"tabbar_found") selectedImage:UI_IMAGE(@"tabbar_found") ];

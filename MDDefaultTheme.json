@@ -1,0 +1,13 @@
+{
+    "kThemeInfo":{
+        "ThemeId":"001",
+        "ThemeName":"默认主题"
+    }
+    "kEmotionColor":{
+        "positive":"#f7cac9",
+        "neutral":"#e1e1e1",
+        "negative":"#92a8d1"
+    }
+    "kNavigationBarColor":"#f7cac9",
+    "kTabBarColor":"#f7cac9"
+}

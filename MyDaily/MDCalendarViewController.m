@@ -11,6 +11,8 @@
 #import <Masonry/Masonry.h>
 #import "UIDefine.h"
 #import "MDCalendarManager.h"
+#import "MDThemeColorManager.h"
+#import "UIColor+MDHexColor.h"
 
 @interface MDCalendarViewController ()<JTCalendarDelegate>
 
@@ -29,7 +31,7 @@
         self.MDCalendarManager = [MDCalendarManager sharedInstance];
         self.JTCalendarManager = [JTCalendarManager new];
         self.JTCalendarManager.delegate = self;
-        _currentMonthData = [_MDCalendarManager fakeEmotions];
+        _currentMonthData = [_MDCalendarManager fakeEmotionsForMonth:[NSDate date]];
     }
     return self;
 }
@@ -66,19 +68,19 @@
 - (void)configPositiveEmotionUI:(UIView<JTCalendarDay> *)dayView {
     JTCalendarDayView *calendarDayView = (JTCalendarDayView *)dayView;
     calendarDayView.circleView.hidden = NO;
-    calendarDayView.circleView.backgroundColor = [UIColor colorWithRed:247./255 green:202./255 blue:201./255 alpha:1];
+    calendarDayView.circleView.backgroundColor = [UIColor MD_ColorWithHexString:[[MDThemeColorManager sharedInstance] positiveColor]];
 }
 
 - (void)configNeutralEmotionUI:(UIView<JTCalendarDay> *)dayView {
     JTCalendarDayView *calendarDayView = (JTCalendarDayView *)dayView;
     calendarDayView.circleView.hidden = NO;
-    calendarDayView.circleView.backgroundColor = [UIColor lightGrayColor];
+    calendarDayView.circleView.backgroundColor = [UIColor MD_ColorWithHexString:[[MDThemeColorManager sharedInstance] neutralColor]];
 }
 
 - (void)configNegativeEmotionUI:(UIView<JTCalendarDay> *)dayView {
     JTCalendarDayView *calendarDayView = (JTCalendarDayView *)dayView;
     calendarDayView.circleView.hidden = NO;
-    calendarDayView.circleView.backgroundColor = [UIColor colorWithRed:146./255 green:168./255 blue:209./255 alpha:1];
+    calendarDayView.circleView.backgroundColor = [UIColor MD_ColorWithHexString:[[MDThemeColorManager sharedInstance] negativeColor]];
 }
 
 #pragma mark - JTCalendarDelegate

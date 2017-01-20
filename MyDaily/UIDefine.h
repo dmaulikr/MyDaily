@@ -14,5 +14,7 @@
 #define kNaviHeight 64
 #define UI_IMAGE(filename) [UIImage imageNamed:filename]
 
+#define kThemeDidChangedNotification @"kThemeDidChangedNotification"
+
 
 #endif /* UIDefine_h */

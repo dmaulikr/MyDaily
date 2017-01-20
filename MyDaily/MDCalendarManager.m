@@ -22,18 +22,19 @@ static MDCalendarManager *manager = nil;
     return manager;
 }
 
-- (NSMutableDictionary<NSDate *,NSObject<MDDailyEmotionProtocol> *> *)fakeEmotions {
+- (NSMutableDictionary<NSDate *,NSObject<MDDailyEmotionProtocol> *> *)fakeEmotionsForMonth:(NSDate *)date {
     JTDateHelper *dateHelper = [[JTDateHelper alloc] init];
-    NSDate *date = [dateHelper firstDayOfMonth:[NSDate date]];
+    NSDate *adate = [dateHelper firstDayOfMonth:date];
     NSMutableDictionary *result = [NSMutableDictionary dictionary];
-    while ([dateHelper date:date isEqualOrBefore:[NSDate date]]) {
-        MDDailyEmotionModel * fakeModel = [MDDailyEmotionModel fakeEmotionModelForDate:date];
+    while ([dateHelper date:adate isEqualOrBefore:[NSDate date]]) {
+        MDDailyEmotionModel * fakeModel = [MDDailyEmotionModel fakeEmotionModelForDate:adate];
         if (fakeModel) {
-            [result setObject:fakeModel forKey:date];
+            [result setObject:fakeModel forKey:adate];
         }
-        date = [NSDate dateWithTimeInterval:24*60*60 sinceDate:date];
+        adate = [NSDate dateWithTimeInterval:24*60*60 sinceDate:adate];
     }
     return result;
 }
+
 
 @end

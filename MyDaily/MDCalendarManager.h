@@ -12,6 +12,9 @@
 @interface MDCalendarManager : NSObject
 
 + (instancetype)sharedInstance;
-- (NSMutableDictionary<NSDate *,NSObject<MDDailyEmotionProtocol> *> *)fakeEmotions;
+- (NSMutableDictionary<NSDate *,NSObject<MDDailyEmotionProtocol> *> *)fakeEmotionsForMonth:(NSDate *)date;
+
+//某个月的数据
+- (NSMutableDictionary<NSDate *,NSObject<MDDailyEmotionProtocol> *> *)dataForMonth:(NSDate *)date;
 
 @end

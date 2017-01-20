@@ -12,7 +12,7 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSUInteger, MDEmotionType) {
-    MDEmotionTypePositive,
+    MDEmotionTypePositive = 0,
     MDEmotionTypeNeutral,
     MDEmotionTypeNegative,
 };

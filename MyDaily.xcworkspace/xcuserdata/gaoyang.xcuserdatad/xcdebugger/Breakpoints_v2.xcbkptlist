@@ -6,16 +6,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MyDaily/MDCalendarManager.m"
-            timestampString = "506503434.184024"
+            filePath = "MyDaily/MDThemeColorManager.m"
+            timestampString = "506597378.853343"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "-fakeEmotions"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "-positiveColor"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MyDaily/MDCalendarViewController.m"
-            timestampString = "506504000.114743"
+            filePath = "MyDaily/MDThemeColorManager.m"
+            timestampString = "506597393.659116"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
-            landmarkName = "-calendar:prepareDayView:"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "-loadDefaultTheme"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyDaily/MDThemeColorManager.m"
+            timestampString = "506597409.589875"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "-loadDefaultTheme"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
