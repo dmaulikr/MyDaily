@@ -18,6 +18,16 @@
     NSString *resultString = nil;
     NSString *testString = nil;
     NSMutableString *finalString = [NSMutableString string];
+    
+    while ([scanner isAtEnd] == NO) {
+        if ([scanner scanUpToString:@"/*" intoString:&resultString]) {
+            [finalString appendString:resultString];
+        }
+        if ([scanner scanUpToString:@"*/" intoString:&testString]) {
+            [scanner scanString:@"*/" intoString:NULL];
+        }
+    }
+    return finalString;
 }
 
 @end
