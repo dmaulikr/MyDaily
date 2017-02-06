@@ -30,4 +30,29 @@
     return finalString;
 }
 
+- (NSString *)MD_stringWithNoEscapeCharacter {
+    if (self.length == 0) {
+        return self;
+    }
+////    NSScanner *scanner = [NSScanner scannerWithString:self];
+//    NSString *resultString = nil;
+//    NSString *escapeChar = nil;
+//    NSMutableString *finalString = [self mutableCopy];
+//    for (int i = 0; i < finalString.length; i ++) {
+//        escapeChar = [finalString substringWithRange:NSMakeRange(i, 1)];
+//        if ([escapeChar isEqualToString:@"\\"]) {
+//            [finalString deleteCharactersInRange:NSMakeRange(i, 1)];
+//        }
+//    }
+////    while ([scanner isAtEnd] == NO) {
+////        if ([scanner scanUpToString:@"\\" intoString:&resultString]) {
+////            [finalString appendString:resultString];
+////        }
+////        scanner.scanLocation++;
+////    }
+//    return finalString;
+    NSCharacterSet *charSet = [NSCharacterSet characterSetWithCharactersInString:@"\n\\"];
+    return [self stringByTrimmingCharactersInSet:charSet];
+}
+
 @end

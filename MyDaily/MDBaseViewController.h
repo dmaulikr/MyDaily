@@ -10,4 +10,6 @@
 
 @interface MDBaseViewController : UIViewController
 
+@property (nonatomic,assign) BOOL showNaviBar;
+
 @end

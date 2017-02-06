@@ -7,9 +7,13 @@
 //
 
 #import "MDThemeColorManager.h"
+#import "NSString+MDJSON.h"
+#import "UIColor+MDHexColor.h"
+
 #define kMDDefaultThemeFileName @"MDDefaultTheme"
 #define kMDTheme_EmotionColor @"kEmotionColor"
 #define kMDTheme_NaviColor @"kNavigationBarColor"
+
 
 @interface MDThemeColorManager ()
 
@@ -43,6 +47,7 @@
     if (!rawString) {
         return;
     }
+    rawString = [rawString MD_stringWithNoEscapeCharacter];
     NSError *error = nil;
     NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:[rawString dataUsingEncoding:NSUTF8StringEncoding]
                                                              options:NSJSONReadingMutableContainers
@@ -55,16 +60,33 @@
     }
 }
 
-- (NSString *)positiveColor {
-    return [self.currentThemeData objectForKey:@"positive"];
+- (UIColor *)positiveColor {
+//    return [self.currentThemeData objectForKey:@"positive"];
+    return [UIColor MD_ColorWithHexString:@"#f7cac9"];
 }
 
-- (NSString *)neutralColor {
-    return [self.currentThemeData objectForKey:@"neutral"];
+- (UIColor *)neutralColor {
+//    return [self.currentThemeData objectForKey:@"neutral"];
+    return [UIColor MD_ColorWithHexString:@"#e1e1e1"];
 }
 
-- (NSString *)negativeColor {
-    return [self.currentThemeData objectForKey:@"negative"];
+- (UIColor *)negativeColor {
+//    return [self.currentThemeData objectForKey:@"negative"];
+    return [UIColor MD_ColorWithHexString:@"#92a8d1"];
+}
+
+- (UIColor *)colorForEmotion:(MDEmotionType)emotionType {
+    switch (emotionType) {
+        case MDEmotionTypePositive:
+            return [self positiveColor];
+            break;
+        case MDEmotionTypeNeutral:
+            return [self neutralColor];
+            break;
+        case MDEmotionTypeNegative:
+            return [self negativeColor];
+            break;
+    }
 }
 
 @end

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4D3B23020ABF92D15A4AF445 /* libPods-MyDaily.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6CB373571A47006CA0A7B1 /* libPods-MyDaily.a */; };
+		A90EA8B91E481FBC004DABBE /* MDDayDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A90EA8B81E481FBC004DABBE /* MDDayDetailViewController.m */; };
+		A90EA8BC1E4820F9004DABBE /* MDDayPickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A90EA8BB1E4820F9004DABBE /* MDDayPickViewController.m */; };
 		A92B0D231E2E079200BABABC /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92B0D221E2E079200BABABC /* LocalAuthentication.framework */; };
 		A92B0D261E2E0B2F00BABABC /* MDTouchIDAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A92B0D251E2E0B2F00BABABC /* MDTouchIDAuthViewController.m */; };
 		A92B0D371E2F444800BABABC /* MDCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A92B0D361E2F444800BABABC /* MDCalendarViewController.m */; };
@@ -38,6 +40,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A90EA8B71E481FBC004DABBE /* MDDayDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDayDetailViewController.h; sourceTree = "<group>"; };
+		A90EA8B81E481FBC004DABBE /* MDDayDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDayDetailViewController.m; sourceTree = "<group>"; };
+		A90EA8BA1E4820F9004DABBE /* MDDayPickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDayPickViewController.h; sourceTree = "<group>"; };
+		A90EA8BB1E4820F9004DABBE /* MDDayPickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDayPickViewController.m; sourceTree = "<group>"; };
 		A92B0D221E2E079200BABABC /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		A92B0D241E2E0B2F00BABABC /* MDTouchIDAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDTouchIDAuthViewController.h; sourceTree = "<group>"; };
 		A92B0D251E2E0B2F00BABABC /* MDTouchIDAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDTouchIDAuthViewController.m; sourceTree = "<group>"; };
@@ -110,6 +116,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A90EA8B51E481F5E004DABBE /* DayEdit */ = {
+			isa = PBXGroup;
+			children = (
+				A90EA8BA1E4820F9004DABBE /* MDDayPickViewController.h */,
+				A90EA8BB1E4820F9004DABBE /* MDDayPickViewController.m */,
+			);
+			name = DayEdit;
+			sourceTree = "<group>";
+		};
+		A90EA8B61E481F95004DABBE /* DayDetail */ = {
+			isa = PBXGroup;
+			children = (
+				A90EA8B71E481FBC004DABBE /* MDDayDetailViewController.h */,
+				A90EA8B81E481FBC004DABBE /* MDDayDetailViewController.m */,
+			);
+			name = DayDetail;
+			sourceTree = "<group>";
+		};
 		A92B0D211E2E079200BABABC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +165,8 @@
 		A92B0D391E2F5D9900BABABC /* Function */ = {
 			isa = PBXGroup;
 			children = (
+				A90EA8B61E481F95004DABBE /* DayDetail */,
+				A90EA8B51E481F5E004DABBE /* DayEdit */,
 				A97B1BC11E31E23F00557B34 /* ThemeColor */,
 				A9A5AAC71E30ADA50005E9F5 /* Statistics */,
 				A92B0D3A1E2F6D1C00BABABC /* DailyEmotion */,
@@ -475,7 +501,9 @@
 				A97B1BC61E31E5AF00557B34 /* MDBaseViewController.m in Sources */,
 				A9A5AACA1E30ADD80005E9F5 /* MDStatisticsViewController.m in Sources */,
 				A9A5AACF1E30BA640005E9F5 /* MDStatisticsManager.m in Sources */,
+				A90EA8B91E481FBC004DABBE /* MDDayDetailViewController.m in Sources */,
 				A9A5AAC61E3094700005E9F5 /* MDCalendarManager.m in Sources */,
+				A90EA8BC1E4820F9004DABBE /* MDDayPickViewController.m in Sources */,
 				A9BDD6E81D8A66DF0044DA0F /* APPDelegate+Controllers.m in Sources */,
 				A97B1BC01E31E23B00557B34 /* MDThemeColorManager.m in Sources */,
 				A9BDD6CB1D8A640A0044DA0F /* main.m in Sources */,

@@ -11,5 +11,6 @@
 @interface NSString(MDJSON)
 
 - (NSString *)MD_stringWithNoComment;
+- (NSString *)MD_stringWithNoEscapeCharacter;
 
 @end

@@ -8,14 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "MDDailyEmotionInterface.h"
 
 @interface MDThemeColorManager : NSObject
 
 + (instancetype)sharedInstance;
 
-- (NSString *)positiveColor;
-- (NSString *)neutralColor;
-- (NSString *)negativeColor;
+- (UIColor *)positiveColor;
+- (UIColor *)neutralColor;
+- (UIColor *)negativeColor;
 
+- (UIColor *)colorForEmotion:(MDEmotionType)emotionType;
 
 @end

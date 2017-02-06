@@ -11,6 +11,8 @@
 
 @interface MDBaseViewController ()
 
+@property (nonatomic,strong) UIView *naviBar;
+
 @end
 
 @implementation MDBaseViewController

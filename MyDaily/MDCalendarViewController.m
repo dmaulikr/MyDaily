@@ -12,9 +12,9 @@
 #import "UIDefine.h"
 #import "MDCalendarManager.h"
 #import "MDThemeColorManager.h"
-#import "UIColor+MDHexColor.h"
+#import "MDDayPickViewController.h"
 
-@interface MDCalendarViewController ()<JTCalendarDelegate>
+@interface MDCalendarViewController ()<JTCalendarDelegate,UIViewControllerTransitioningDelegate>
 
 @property (nonatomic,strong) JTCalendarMenuView *calendarMenuView;
 @property (nonatomic,strong) JTHorizontalCalendarView *calendarView;
@@ -68,19 +68,19 @@
 - (void)configPositiveEmotionUI:(UIView<JTCalendarDay> *)dayView {
     JTCalendarDayView *calendarDayView = (JTCalendarDayView *)dayView;
     calendarDayView.circleView.hidden = NO;
-    calendarDayView.circleView.backgroundColor = [UIColor MD_ColorWithHexString:[[MDThemeColorManager sharedInstance] positiveColor]];
+    calendarDayView.circleView.backgroundColor = [[MDThemeColorManager sharedInstance] positiveColor];
 }
 
 - (void)configNeutralEmotionUI:(UIView<JTCalendarDay> *)dayView {
     JTCalendarDayView *calendarDayView = (JTCalendarDayView *)dayView;
     calendarDayView.circleView.hidden = NO;
-    calendarDayView.circleView.backgroundColor = [UIColor MD_ColorWithHexString:[[MDThemeColorManager sharedInstance] neutralColor]];
+    calendarDayView.circleView.backgroundColor = [[MDThemeColorManager sharedInstance] neutralColor];
 }
 
 - (void)configNegativeEmotionUI:(UIView<JTCalendarDay> *)dayView {
     JTCalendarDayView *calendarDayView = (JTCalendarDayView *)dayView;
     calendarDayView.circleView.hidden = NO;
-    calendarDayView.circleView.backgroundColor = [UIColor MD_ColorWithHexString:[[MDThemeColorManager sharedInstance] negativeColor]];
+    calendarDayView.circleView.backgroundColor = [[MDThemeColorManager sharedInstance] negativeColor];
 }
 
 #pragma mark - JTCalendarDelegate
@@ -150,6 +150,9 @@
             [_calendarView loadPreviousPageWithAnimation];
         }
     }
+    
+    MDDayPickViewController *dayPickVC = [[MDDayPickViewController alloc] init];
+    [self.navigationController pushViewController:dayPickVC animated:YES];
 }
 
 #pragma mark - getter
