@@ -17,6 +17,7 @@
 - (UIColor *)positiveColor;
 - (UIColor *)neutralColor;
 - (UIColor *)negativeColor;
+- (UIColor *)fontColor;
 
 - (UIColor *)colorForEmotion:(MDEmotionType)emotionType;
 

@@ -75,6 +75,10 @@
     return [UIColor MD_ColorWithHexString:@"#92a8d1"];
 }
 
+- (UIColor *)fontColor {
+    return [UIColor whiteColor];
+}
+
 - (UIColor *)colorForEmotion:(MDEmotionType)emotionType {
     switch (emotionType) {
         case MDEmotionTypePositive:

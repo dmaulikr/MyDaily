@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D3B23020ABF92D15A4AF445 /* libPods-MyDaily.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6CB373571A47006CA0A7B1 /* libPods-MyDaily.a */; };
+		903DF4EFBA3C23DE598CD1F5 /* Pods_MyDaily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6CBC9EE696318054D441A2B /* Pods_MyDaily.framework */; };
 		A90EA8B91E481FBC004DABBE /* MDDayDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A90EA8B81E481FBC004DABBE /* MDDayDetailViewController.m */; };
 		A90EA8BC1E4820F9004DABBE /* MDDayPickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A90EA8BB1E4820F9004DABBE /* MDDayPickViewController.m */; };
 		A9175AD41E49B5CE004E86E5 /* bookcity_back_pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9175AD01E49B5CE004E86E5 /* bookcity_back_pressed@2x.png */; };
@@ -16,6 +16,9 @@
 		A9175AD71E49B5CE004E86E5 /* bookcity_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9175AD31E49B5CE004E86E5 /* bookcity_back@3x.png */; };
 		A9175ADA1E49BB56004E86E5 /* MDDayDetailEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9175AD91E49BB56004E86E5 /* MDDayDetailEditViewController.m */; };
 		A9175ADD1E49BFCE004E86E5 /* MDDayEditTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A9175ADC1E49BFCE004E86E5 /* MDDayEditTransition.m */; };
+		A9175AE01E4AC4D4004E86E5 /* okbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9175ADE1E4AC4D4004E86E5 /* okbutton@2x.png */; };
+		A9175AE11E4AC4D4004E86E5 /* okbutton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9175ADF1E4AC4D4004E86E5 /* okbutton@3x.png */; };
+		A9175AE41E4B1242004E86E5 /* MDDayPreviewTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A9175AE31E4B1242004E86E5 /* MDDayPreviewTransition.m */; };
 		A92B0D231E2E079200BABABC /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92B0D221E2E079200BABABC /* LocalAuthentication.framework */; };
 		A92B0D261E2E0B2F00BABABC /* MDTouchIDAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A92B0D251E2E0B2F00BABABC /* MDTouchIDAuthViewController.m */; };
 		A92B0D371E2F444800BABABC /* MDCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A92B0D361E2F444800BABABC /* MDCalendarViewController.m */; };
@@ -58,6 +61,10 @@
 		A9175AD91E49BB56004E86E5 /* MDDayDetailEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDayDetailEditViewController.m; sourceTree = "<group>"; };
 		A9175ADB1E49BFCE004E86E5 /* MDDayEditTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDayEditTransition.h; sourceTree = "<group>"; };
 		A9175ADC1E49BFCE004E86E5 /* MDDayEditTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDayEditTransition.m; sourceTree = "<group>"; };
+		A9175ADE1E4AC4D4004E86E5 /* okbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "okbutton@2x.png"; sourceTree = "<group>"; };
+		A9175ADF1E4AC4D4004E86E5 /* okbutton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "okbutton@3x.png"; sourceTree = "<group>"; };
+		A9175AE21E4B1242004E86E5 /* MDDayPreviewTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDayPreviewTransition.h; sourceTree = "<group>"; };
+		A9175AE31E4B1242004E86E5 /* MDDayPreviewTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDayPreviewTransition.m; sourceTree = "<group>"; };
 		A92B0D221E2E079200BABABC /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		A92B0D241E2E0B2F00BABABC /* MDTouchIDAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDTouchIDAuthViewController.h; sourceTree = "<group>"; };
 		A92B0D251E2E0B2F00BABABC /* MDTouchIDAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDTouchIDAuthViewController.m; sourceTree = "<group>"; };
@@ -102,9 +109,9 @@
 		A9BDD7041D8BD3BB0044DA0F /* tabbar_my@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_my@2x.png"; sourceTree = "<group>"; };
 		A9BDD7071D8BD4E40044DA0F /* tabbar_calendar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_calendar@3x.png"; sourceTree = "<group>"; };
 		A9BDD7081D8BD4E40044DA0F /* tabbar_calendar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_calendar@2x.png"; sourceTree = "<group>"; };
-		AC6CB373571A47006CA0A7B1 /* libPods-MyDaily.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyDaily.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD083CD96D950CC653F9F47 /* Pods-MyDaily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDaily.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyDaily/Pods-MyDaily.release.xcconfig"; sourceTree = "<group>"; };
 		D27B27C3C00408315A7B128E /* Pods-MyDaily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDaily.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyDaily/Pods-MyDaily.debug.xcconfig"; sourceTree = "<group>"; };
+		D6CBC9EE696318054D441A2B /* Pods_MyDaily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyDaily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +121,7 @@
 			files = (
 				A97B1BBC1E31AD2500557B34 /* QuartzCore.framework in Frameworks */,
 				A92B0D231E2E079200BABABC /* LocalAuthentication.framework in Frameworks */,
-				4D3B23020ABF92D15A4AF445 /* libPods-MyDaily.a in Frameworks */,
+				903DF4EFBA3C23DE598CD1F5 /* Pods_MyDaily.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +155,8 @@
 			children = (
 				A90EA8B71E481FBC004DABBE /* MDDayDetailViewController.h */,
 				A90EA8B81E481FBC004DABBE /* MDDayDetailViewController.m */,
+				A9175AE21E4B1242004E86E5 /* MDDayPreviewTransition.h */,
+				A9175AE31E4B1242004E86E5 /* MDDayPreviewTransition.m */,
 			);
 			name = DayDetail;
 			sourceTree = "<group>";
@@ -157,7 +166,7 @@
 			children = (
 				A97B1BBB1E31AD2500557B34 /* QuartzCore.framework */,
 				A92B0D221E2E079200BABABC /* LocalAuthentication.framework */,
-				AC6CB373571A47006CA0A7B1 /* libPods-MyDaily.a */,
+				D6CBC9EE696318054D441A2B /* Pods_MyDaily.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -370,6 +379,8 @@
 		A9BDD6EA1D8A70240044DA0F /* images */ = {
 			isa = PBXGroup;
 			children = (
+				A9175ADE1E4AC4D4004E86E5 /* okbutton@2x.png */,
+				A9175ADF1E4AC4D4004E86E5 /* okbutton@3x.png */,
 				A9175AD01E49B5CE004E86E5 /* bookcity_back_pressed@2x.png */,
 				A9175AD11E49B5CE004E86E5 /* bookcity_back_pressed@3x.png */,
 				A9175AD21E49B5CE004E86E5 /* bookcity_back@2x.png */,
@@ -449,7 +460,9 @@
 			files = (
 				A9BDD6F81D8A723F0044DA0F /* tabbar_statistics@3x.png in Resources */,
 				A9BDD7091D8BD4E40044DA0F /* tabbar_calendar@3x.png in Resources */,
+				A9175AE01E4AC4D4004E86E5 /* okbutton@2x.png in Resources */,
 				A9BDD7011D8BCE020044DA0F /* tabbar_found@3x.png in Resources */,
+				A9175AE11E4AC4D4004E86E5 /* okbutton@3x.png in Resources */,
 				A97B1BD21E3200F900557B34 /* MDDefaultTheme.json in Resources */,
 				A9175AD51E49B5CE004E86E5 /* bookcity_back_pressed@3x.png in Resources */,
 				A9BDD7061D8BD3BB0044DA0F /* tabbar_my@2x.png in Resources */,
@@ -522,6 +535,7 @@
 			files = (
 				A92B0D261E2E0B2F00BABABC /* MDTouchIDAuthViewController.m in Sources */,
 				A9BDD6E51D8A65970044DA0F /* MDMainNavigationViewController.m in Sources */,
+				A9175AE41E4B1242004E86E5 /* MDDayPreviewTransition.m in Sources */,
 				A9A5AABC1E30692E0005E9F5 /* MDDailyEmotionModel.m in Sources */,
 				A9BDD6CE1D8A640A0044DA0F /* AppDelegate.m in Sources */,
 				A9175ADD1E49BFCE004E86E5 /* MDDayEditTransition.m in Sources */,
@@ -645,6 +659,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D27B27C3C00408315A7B128E /* Pods-MyDaily.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E5S98A88N2;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -660,6 +675,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ACD083CD96D950CC653F9F47 /* Pods-MyDaily.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E5S98A88N2;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;

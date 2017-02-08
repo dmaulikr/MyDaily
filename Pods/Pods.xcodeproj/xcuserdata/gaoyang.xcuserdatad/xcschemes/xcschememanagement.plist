@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ChameleonFramework.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>JTCalendar.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>53480ED0BE09FF49E34B1702D485CAAB</key>
+		<key>2CC9D5880F506E560123642271189F4B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>790A64E8899F14CB593181EF83B963FC</key>
+		<key>39B5CF86C5D5526023BFA614CD6D37DC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8A405FE639568A3E1B14E6F66B413B77</key>
+		<key>9B57F4EE4746045CEAE2D933A3C8EC9E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>99898CEF0412B22574716B9C4695D0A8</key>
+		<key>A9A83F63385AA43314397B8DD375464B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C3AD7E342840A1BEA026D1D3A2D9C1A7</key>
+		<key>EB62BE344629B6441F37C9FADA89A95F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA0869B4C4E019AC4484E007F3C2690A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

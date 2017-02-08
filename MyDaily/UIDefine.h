@@ -10,6 +10,7 @@
 #define UIDefine_h
 
 #import <UIKit/UIKit.h>
+#import <ChameleonFramework/Chameleon.h>
 
 #define kNaviHeight 64
 #define UI_IMAGE(filename) [UIImage imageNamed:filename]

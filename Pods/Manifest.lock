@@ -1,4 +1,7 @@
 PODS:
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
   - JTCalendar (2.1.5)
   - Masonry (1.0.0)
   - Realm (0.99.1):
@@ -7,17 +10,19 @@ PODS:
   - XYPieChart (0.2)
 
 DEPENDENCIES:
+  - ChameleonFramework
   - JTCalendar (~> 2.1.5)
   - Masonry (~> 1.0.0)
   - Realm
   - XYPieChart (~> 0.2)
 
 SPEC CHECKSUMS:
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   JTCalendar: 57a4420f12d10c93c3b28da96803e7043d1c9281
   Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
   Realm: 522a0cc8e1f8755ee56d7dc16ca0fc380d045766
   XYPieChart: 0efd8069d26c25d20ab74c01b5ad455f1fc48153
 
-PODFILE CHECKSUM: bee6a5f1c5cc13a32443e606a1e01620064a3ddd
+PODFILE CHECKSUM: 3c0d53bb434dbc7747b7def6fa70a2999f322f2a
 
 COCOAPODS: 1.0.1
