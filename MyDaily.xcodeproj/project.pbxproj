@@ -10,6 +10,12 @@
 		4D3B23020ABF92D15A4AF445 /* libPods-MyDaily.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6CB373571A47006CA0A7B1 /* libPods-MyDaily.a */; };
 		A90EA8B91E481FBC004DABBE /* MDDayDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A90EA8B81E481FBC004DABBE /* MDDayDetailViewController.m */; };
 		A90EA8BC1E4820F9004DABBE /* MDDayPickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A90EA8BB1E4820F9004DABBE /* MDDayPickViewController.m */; };
+		A9175AD41E49B5CE004E86E5 /* bookcity_back_pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9175AD01E49B5CE004E86E5 /* bookcity_back_pressed@2x.png */; };
+		A9175AD51E49B5CE004E86E5 /* bookcity_back_pressed@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9175AD11E49B5CE004E86E5 /* bookcity_back_pressed@3x.png */; };
+		A9175AD61E49B5CE004E86E5 /* bookcity_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9175AD21E49B5CE004E86E5 /* bookcity_back@2x.png */; };
+		A9175AD71E49B5CE004E86E5 /* bookcity_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9175AD31E49B5CE004E86E5 /* bookcity_back@3x.png */; };
+		A9175ADA1E49BB56004E86E5 /* MDDayDetailEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9175AD91E49BB56004E86E5 /* MDDayDetailEditViewController.m */; };
+		A9175ADD1E49BFCE004E86E5 /* MDDayEditTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A9175ADC1E49BFCE004E86E5 /* MDDayEditTransition.m */; };
 		A92B0D231E2E079200BABABC /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92B0D221E2E079200BABABC /* LocalAuthentication.framework */; };
 		A92B0D261E2E0B2F00BABABC /* MDTouchIDAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A92B0D251E2E0B2F00BABABC /* MDTouchIDAuthViewController.m */; };
 		A92B0D371E2F444800BABABC /* MDCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A92B0D361E2F444800BABABC /* MDCalendarViewController.m */; };
@@ -44,6 +50,14 @@
 		A90EA8B81E481FBC004DABBE /* MDDayDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDayDetailViewController.m; sourceTree = "<group>"; };
 		A90EA8BA1E4820F9004DABBE /* MDDayPickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDayPickViewController.h; sourceTree = "<group>"; };
 		A90EA8BB1E4820F9004DABBE /* MDDayPickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDayPickViewController.m; sourceTree = "<group>"; };
+		A9175AD01E49B5CE004E86E5 /* bookcity_back_pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bookcity_back_pressed@2x.png"; sourceTree = "<group>"; };
+		A9175AD11E49B5CE004E86E5 /* bookcity_back_pressed@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bookcity_back_pressed@3x.png"; sourceTree = "<group>"; };
+		A9175AD21E49B5CE004E86E5 /* bookcity_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bookcity_back@2x.png"; sourceTree = "<group>"; };
+		A9175AD31E49B5CE004E86E5 /* bookcity_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bookcity_back@3x.png"; sourceTree = "<group>"; };
+		A9175AD81E49BB56004E86E5 /* MDDayDetailEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDayDetailEditViewController.h; sourceTree = "<group>"; };
+		A9175AD91E49BB56004E86E5 /* MDDayDetailEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDayDetailEditViewController.m; sourceTree = "<group>"; };
+		A9175ADB1E49BFCE004E86E5 /* MDDayEditTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDayEditTransition.h; sourceTree = "<group>"; };
+		A9175ADC1E49BFCE004E86E5 /* MDDayEditTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDayEditTransition.m; sourceTree = "<group>"; };
 		A92B0D221E2E079200BABABC /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		A92B0D241E2E0B2F00BABABC /* MDTouchIDAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDTouchIDAuthViewController.h; sourceTree = "<group>"; };
 		A92B0D251E2E0B2F00BABABC /* MDTouchIDAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDTouchIDAuthViewController.m; sourceTree = "<group>"; };
@@ -121,6 +135,10 @@
 			children = (
 				A90EA8BA1E4820F9004DABBE /* MDDayPickViewController.h */,
 				A90EA8BB1E4820F9004DABBE /* MDDayPickViewController.m */,
+				A9175AD81E49BB56004E86E5 /* MDDayDetailEditViewController.h */,
+				A9175AD91E49BB56004E86E5 /* MDDayDetailEditViewController.m */,
+				A9175ADB1E49BFCE004E86E5 /* MDDayEditTransition.h */,
+				A9175ADC1E49BFCE004E86E5 /* MDDayEditTransition.m */,
 			);
 			name = DayEdit;
 			sourceTree = "<group>";
@@ -352,6 +370,10 @@
 		A9BDD6EA1D8A70240044DA0F /* images */ = {
 			isa = PBXGroup;
 			children = (
+				A9175AD01E49B5CE004E86E5 /* bookcity_back_pressed@2x.png */,
+				A9175AD11E49B5CE004E86E5 /* bookcity_back_pressed@3x.png */,
+				A9175AD21E49B5CE004E86E5 /* bookcity_back@2x.png */,
+				A9175AD31E49B5CE004E86E5 /* bookcity_back@3x.png */,
 				A9BDD7071D8BD4E40044DA0F /* tabbar_calendar@3x.png */,
 				A9BDD7081D8BD4E40044DA0F /* tabbar_calendar@2x.png */,
 				A9BDD6F61D8A723F0044DA0F /* tabbar_statistics@3x.png */,
@@ -429,12 +451,16 @@
 				A9BDD7091D8BD4E40044DA0F /* tabbar_calendar@3x.png in Resources */,
 				A9BDD7011D8BCE020044DA0F /* tabbar_found@3x.png in Resources */,
 				A97B1BD21E3200F900557B34 /* MDDefaultTheme.json in Resources */,
+				A9175AD51E49B5CE004E86E5 /* bookcity_back_pressed@3x.png in Resources */,
 				A9BDD7061D8BD3BB0044DA0F /* tabbar_my@2x.png in Resources */,
 				A9BDD7051D8BD3BB0044DA0F /* tabbar_my@3x.png in Resources */,
 				A9BDD6DC1D8A640A0044DA0F /* LaunchScreen.storyboard in Resources */,
 				A9BDD6D91D8A640A0044DA0F /* Assets.xcassets in Resources */,
+				A9175AD71E49B5CE004E86E5 /* bookcity_back@3x.png in Resources */,
+				A9175AD61E49B5CE004E86E5 /* bookcity_back@2x.png in Resources */,
 				A9BDD6F91D8A723F0044DA0F /* tabbar_statistics@2x.png in Resources */,
 				A9BDD70A1D8BD4E40044DA0F /* tabbar_calendar@2x.png in Resources */,
+				A9175AD41E49B5CE004E86E5 /* bookcity_back_pressed@2x.png in Resources */,
 				A9BDD7021D8BCE020044DA0F /* tabbar_found@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +524,7 @@
 				A9BDD6E51D8A65970044DA0F /* MDMainNavigationViewController.m in Sources */,
 				A9A5AABC1E30692E0005E9F5 /* MDDailyEmotionModel.m in Sources */,
 				A9BDD6CE1D8A640A0044DA0F /* AppDelegate.m in Sources */,
+				A9175ADD1E49BFCE004E86E5 /* MDDayEditTransition.m in Sources */,
 				A97B1BC61E31E5AF00557B34 /* MDBaseViewController.m in Sources */,
 				A9A5AACA1E30ADD80005E9F5 /* MDStatisticsViewController.m in Sources */,
 				A9A5AACF1E30BA640005E9F5 /* MDStatisticsManager.m in Sources */,
@@ -510,6 +537,7 @@
 				A92B0D371E2F444800BABABC /* MDCalendarViewController.m in Sources */,
 				A97B1BDA1E3210DD00557B34 /* NSString+MDJSON.m in Sources */,
 				A97B1BD61E320DA700557B34 /* UIColor+MDHexColor.m in Sources */,
+				A9175ADA1E49BB56004E86E5 /* MDDayDetailEditViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,10 @@
 
 @interface MDBaseViewController : UIViewController
 
+@property (nonatomic,strong) UIView *naviBar;
 @property (nonatomic,assign) BOOL showNaviBar;
+@property (nonatomic,assign) BOOL showLeftView;
+
+- (void)leftButtonAction;
 
 @end

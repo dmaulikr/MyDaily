@@ -63,13 +63,13 @@ static CGFloat pieChartWidth = 300;
 - (UIColor *)pieChart:(XYPieChart *)pieChart colorForSliceAtIndex:(NSUInteger)index {
     switch (index) {
         case 0:
-            return [UIColor MD_ColorWithHexString:[[MDThemeColorManager sharedInstance] positiveColor]];
+            return [[MDThemeColorManager sharedInstance] positiveColor];
             break;
         case 1:
-            return [UIColor MD_ColorWithHexString:[[MDThemeColorManager sharedInstance] neutralColor]];
+            return [[MDThemeColorManager sharedInstance] neutralColor];
             break;
         case 2:
-            return [UIColor MD_ColorWithHexString:[[MDThemeColorManager sharedInstance] negativeColor]];
+            return [[MDThemeColorManager sharedInstance] negativeColor];
             break;
         default:
             return [UIColor whiteColor];
