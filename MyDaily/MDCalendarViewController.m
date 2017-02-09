@@ -13,8 +13,10 @@
 #import "MDCalendarManager.h"
 #import "MDThemeColorManager.h"
 #import "MDDayPickViewController.h"
+#import "MDDayPreviewTransition.h"
+#import "MDDayDetailViewController.h"
 
-@interface MDCalendarViewController ()<JTCalendarDelegate,UIViewControllerTransitioningDelegate>
+@interface MDCalendarViewController ()<JTCalendarDelegate,UIViewControllerTransitioningDelegate,UINavigationControllerDelegate>
 
 @property (nonatomic,strong) JTCalendarMenuView *calendarMenuView;
 @property (nonatomic,strong) JTHorizontalCalendarView *calendarView;
@@ -24,7 +26,10 @@
 
 @end
 
-@implementation MDCalendarViewController
+@implementation MDCalendarViewController {
+    CGRect _pickedDayRect;
+    CGRect _screenRect;
+}
 
 - (instancetype)init {
     if (self = [super init]) {
@@ -48,6 +53,11 @@
     [self.JTCalendarManager setDate:[NSDate date]];
 
     [self makeConstraints];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    self.navigationController.delegate = self;
 }
 
 #pragma mark - UI
@@ -125,14 +135,14 @@
 - (void)calendar:(JTCalendarManager *)calendar didTouchDayView:(UIView<JTCalendarDay> *)dayView {
     JTCalendarDayView *calendarDayView = (JTCalendarDayView *)dayView;
     // Animation for the circleView
-    calendarDayView.circleView.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.1, 0.1);
-    [UIView transitionWithView:calendarDayView
-                      duration:.3
-                       options:0
-                    animations:^{
-                        calendarDayView.circleView.transform = CGAffineTransformIdentity;
-                        [_JTCalendarManager reload];
-                    } completion:nil];
+//    calendarDayView.circleView.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.1, 0.1);
+//    [UIView transitionWithView:calendarDayView
+//                      duration:.3
+//                       options:0
+//                    animations:^{
+//                        calendarDayView.circleView.transform = CGAffineTransformIdentity;
+//                        [_JTCalendarManager reload];
+//                    } completion:nil];
     
     
     // Don't change page in week mode because block the selection of days in first and last weeks of the month
@@ -151,8 +161,44 @@
         }
     }
     
-    MDDayPickViewController *dayPickVC = [[MDDayPickViewController alloc] init];
-    [self.navigationController pushViewController:dayPickVC animated:YES];
+    _pickedDayRect = [calendarDayView convertRect:calendarDayView.circleView.frame toView:self.view];
+    _screenRect = self.view.frame;
+    NSObject<MDDailyEmotionProtocol> *dateObject = [_currentMonthData objectForKey:calendarDayView.date];
+    if (dateObject) {
+        MDDayDetailViewController *dayDetailVC = [[MDDayDetailViewController alloc] initWithDailyData:dateObject];
+        [self.navigationController pushViewController:dayDetailVC animated:YES];
+    }else {
+        MDDayPickViewController *dayPickVC = [[MDDayPickViewController alloc] init];
+        [self.navigationController pushViewController:dayPickVC animated:YES];
+    }
+}
+
+#pragma mark - UINavigationControllerDelegate
+- (nullable id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+                                            animationControllerForOperation:(UINavigationControllerOperation)operation
+                                                         fromViewController:(UIViewController *)fromVC
+                                                           toViewController:(UIViewController *)toVC {
+    if (operation == UINavigationControllerOperationPush) {
+        if ([toVC isKindOfClass:[MDDayDetailViewController class]]) {
+            return [[MDDayPreviewTransition alloc] initWithTransitionType:MDDayEditTransitionType_Push
+                                                                 fromRect:_pickedDayRect toRect:_screenRect];
+        }else {
+            return nil;
+        }
+    }else {
+        if ([fromVC isKindOfClass:[MDDayDetailViewController class]]) {
+            return [[MDDayPreviewTransition alloc] initWithTransitionType:MDDayEditTransitionType_Pop
+                                                                 fromRect:_screenRect toRect:_pickedDayRect];
+        }else {
+            return nil;
+        }
+    }
+//    if(operation == UINavigationControllerOperationPop) {
+//        return [[MDDayPreviewTransition alloc] initWithTransitionType:MDDayEditTransitionType_Pop
+//                                                          fromRect:_screenRect toRect:_pickedDayRect];
+//    }else {
+//
+//    }
 }
 
 #pragma mark - getter

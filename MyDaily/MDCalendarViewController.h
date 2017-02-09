@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MDBaseViewController.h"
 
+@class JTCalendarDayView;
 @interface MDCalendarViewController : MDBaseViewController
 
 @end

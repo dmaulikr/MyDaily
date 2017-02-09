@@ -7,7 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface MDDayPreviewTransition : NSObject
+typedef NS_ENUM(NSUInteger, MDDayEditTransitionType) {
+    MDDayEditTransitionType_Push,
+    MDDayEditTransitionType_Pop
+};
+
+@interface MDDayPreviewTransition : NSObject<UIViewControllerAnimatedTransitioning>
+
+- (instancetype)initWithTransitionType:(MDDayEditTransitionType)transitionType fromRect:(CGRect)originRect toRect:(CGRect)toRect;
 
 @end

@@ -8,6 +8,9 @@
 
 #import "MDBaseViewController.h"
 
+@protocol MDDailyEmotionProtocol;
 @interface MDDayDetailViewController : MDBaseViewController
+
+- (instancetype)initWithDailyData:(id<MDDailyEmotionProtocol>)dailyEmotionModel;
 
 @end

@@ -12,16 +12,15 @@
 
 @interface MDDayDetailViewController ()
 
-@property (nonatomic,assign) MDEmotionType emotionType;
+@property (nonatomic,strong) id<MDDailyEmotionProtocol> emotionModel;
 
 @end
 
 @implementation MDDayDetailViewController
 
-- (instancetype)initWithEmotion:(MDEmotionType)emotionType {
+- (instancetype)initWithDailyData:(id<MDDailyEmotionProtocol>)dailyEmotionModel {
     if (self = [super init]) {
-        self.emotionType = emotionType;
-        self.modalPresentationStyle = UIModalPresentationCustom;
+        self.emotionModel = dailyEmotionModel;
     }
     return self;
 }
@@ -29,7 +28,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [[MDThemeColorManager sharedInstance] colorForEmotion:_emotionType];
+    self.view.backgroundColor = [[MDThemeColorManager sharedInstance] colorForEmotion:[_emotionModel dailyEmotion].integerValue];
+}
+
+- (void)leftButtonAction {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 
