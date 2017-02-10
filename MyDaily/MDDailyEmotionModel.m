@@ -10,8 +10,8 @@
 
 @interface MDDailyEmotionModel ()
 
-@property (nonatomic,strong,readwrite) NSNumber *dailyEmotion;
-@property (nonatomic,strong,readwrite) NSString *diaryText;
+//@property (nonatomic,strong,readwrite) NSNumber *dailyEmotion;
+//@property (nonatomic,strong,readwrite) NSString *diaryText;
 @property (nonatomic,strong,readwrite) NSDate *date;
 
 @end

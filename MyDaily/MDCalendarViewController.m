@@ -36,7 +36,7 @@
         self.MDCalendarManager = [MDCalendarManager sharedInstance];
         self.JTCalendarManager = [JTCalendarManager new];
         self.JTCalendarManager.delegate = self;
-        _currentMonthData = [_MDCalendarManager fakeEmotionsForMonth:[NSDate date]];
+        _currentMonthData = [_MDCalendarManager dataForMonth:[NSDate date]];
     }
     return self;
 }

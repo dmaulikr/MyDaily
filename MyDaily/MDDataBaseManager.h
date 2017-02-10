@@ -14,8 +14,10 @@
 + (instancetype)sharedInstance;
 
 
-- (BOOL)saveEmotionModel:(MDDailyEmotionModel *)model forDate:(NSDate *)date;
-- (void)saveEmotionModel:(MDDailyEmotionModel *)model forDate:(NSDate *)date complete:(void(^)(NSError *))complete;
+- (BOOL)saveEmotionModel:(MDDailyEmotionModel *)model;
+- (void)saveEmotionModel:(MDDailyEmotionModel *)model complete:(void(^)(NSError *))complete;
 
+- (MDDailyEmotionModel *)dailyModelForDate:(NSDate *)date;
+- (NSArray<MDDailyEmotionModel *> *)dailyModelsFromDate:(NSDate *)fromDate toDate:(NSDate *)toDate;
 
 @end

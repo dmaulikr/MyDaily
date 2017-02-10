@@ -15,6 +15,7 @@
 
 @property (nonatomic,assign) MDEmotionType currentEmotionType;
 @property (nonatomic,strong) UITextView *textView;
+@property (nonatomic,strong) MDDailyEmotionModel *emotionModel;
 
 @end
 
@@ -23,6 +24,8 @@
 - (instancetype)initWithEmotionType:(MDEmotionType)emotionType {
     if (self = [super init]) {
         _currentEmotionType = emotionType;
+        self.emotionModel = [[MDDailyEmotionModel alloc] init];
+        self.emotionModel.dailyEmotion = @(emotionType);
     }
     return self;
 }
@@ -115,11 +118,11 @@
 }
 
 - (void)save {
-//    [[MDDataBaseManager sharedInstance] saveEmotionModel:<#(MDDailyEmotionModel *)#> forDate:<#(NSDate *)#> complete:^(NSError *) {
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            [self.navigationController popViewControllerAnimated:YES];
-//        })
-//    }]
+    [[MDDataBaseManager sharedInstance] saveEmotionModel:self.emotionModel complete:^(NSError *error) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.navigationController popViewControllerAnimated:YES];
+        });
+    }];
 }
 
 //- (void)
