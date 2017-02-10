@@ -32,6 +32,7 @@
 		A9A5AAC61E3094700005E9F5 /* MDCalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A5AAC51E3094700005E9F5 /* MDCalendarManager.m */; };
 		A9A5AACA1E30ADD80005E9F5 /* MDStatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A5AAC91E30ADD80005E9F5 /* MDStatisticsViewController.m */; };
 		A9A5AACF1E30BA640005E9F5 /* MDStatisticsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A5AACE1E30BA640005E9F5 /* MDStatisticsManager.m */; };
+		A9B237E31E4D96A200CE2EB4 /* MDDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B237E21E4D96A200CE2EB4 /* MDDataBaseManager.m */; };
 		A9BDD6CB1D8A640A0044DA0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BDD6CA1D8A640A0044DA0F /* main.m */; };
 		A9BDD6CE1D8A640A0044DA0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BDD6CD1D8A640A0044DA0F /* AppDelegate.m */; };
 		A9BDD6D91D8A640A0044DA0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9BDD6D81D8A640A0044DA0F /* Assets.xcassets */; };
@@ -89,6 +90,8 @@
 		A9A5AAC91E30ADD80005E9F5 /* MDStatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDStatisticsViewController.m; sourceTree = "<group>"; };
 		A9A5AACD1E30BA640005E9F5 /* MDStatisticsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDStatisticsManager.h; sourceTree = "<group>"; };
 		A9A5AACE1E30BA640005E9F5 /* MDStatisticsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDStatisticsManager.m; sourceTree = "<group>"; };
+		A9B237E11E4D96A200CE2EB4 /* MDDataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDataBaseManager.h; sourceTree = "<group>"; };
+		A9B237E21E4D96A200CE2EB4 /* MDDataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDataBaseManager.m; sourceTree = "<group>"; };
 		A9BDD6C61D8A640A0044DA0F /* MyDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BDD6CA1D8A640A0044DA0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A9BDD6CC1D8A640A0044DA0F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -192,6 +195,7 @@
 		A92B0D391E2F5D9900BABABC /* Function */ = {
 			isa = PBXGroup;
 			children = (
+				A9B237E01E4D960600CE2EB4 /* Persist */,
 				A90EA8B61E481F95004DABBE /* DayDetail */,
 				A90EA8B51E481F5E004DABBE /* DayEdit */,
 				A97B1BC11E31E23F00557B34 /* ThemeColor */,
@@ -318,6 +322,15 @@
 				A9A5AACE1E30BA640005E9F5 /* MDStatisticsManager.m */,
 			);
 			name = Manager;
+			sourceTree = "<group>";
+		};
+		A9B237E01E4D960600CE2EB4 /* Persist */ = {
+			isa = PBXGroup;
+			children = (
+				A9B237E11E4D96A200CE2EB4 /* MDDataBaseManager.h */,
+				A9B237E21E4D96A200CE2EB4 /* MDDataBaseManager.m */,
+			);
+			name = Persist;
 			sourceTree = "<group>";
 		};
 		A9BDD6BD1D8A640A0044DA0F = {
@@ -540,6 +553,7 @@
 				A9BDD6CE1D8A640A0044DA0F /* AppDelegate.m in Sources */,
 				A9175ADD1E49BFCE004E86E5 /* MDDayEditTransition.m in Sources */,
 				A97B1BC61E31E5AF00557B34 /* MDBaseViewController.m in Sources */,
+				A9B237E31E4D96A200CE2EB4 /* MDDataBaseManager.m in Sources */,
 				A9A5AACA1E30ADD80005E9F5 /* MDStatisticsViewController.m in Sources */,
 				A9A5AACF1E30BA640005E9F5 /* MDStatisticsManager.m in Sources */,
 				A90EA8B91E481FBC004DABBE /* MDDayDetailViewController.m in Sources */,

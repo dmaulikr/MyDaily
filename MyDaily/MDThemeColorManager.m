@@ -9,6 +9,8 @@
 #import "MDThemeColorManager.h"
 #import "NSString+MDJSON.h"
 #import "UIColor+MDHexColor.h"
+#import <ChameleonFramework/Chameleon.h>
+
 
 #define kMDDefaultThemeFileName @"MDDefaultTheme"
 #define kMDTheme_EmotionColor @"kEmotionColor"
@@ -91,6 +93,10 @@
             return [self negativeColor];
             break;
     }
+}
+
+- (UIColor *)fontColorForEmotion:(MDEmotionType)emotionType {
+    return [UIColor colorWithContrastingBlackOrWhiteColorOn:[self colorForEmotion:emotionType] isFlat:YES];
 }
 
 @end
